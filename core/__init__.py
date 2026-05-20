@@ -9,6 +9,7 @@ from .market_scanner import get_all_a_share_codes, filter_stocks, save_stock_lis
 from .trend_stage import TrendStageAnalyzer, analyze_trend_stages
 from .price_levels import PriceLevelCalculator, format_trade_plan
 from .yan_gu_detector import YanGuDetector, scan_yan_gu
+from .market_state import MarketStateAnalyzer, assess_market, get_position_advice, format_report
 
 __all__ = [
     # 趋势识别
@@ -30,5 +31,11 @@ __all__ = [
     
     # 妖股识别
     'YanGuDetector',
-    'scan_yan_gu'
+    'scan_yan_gu',
+
+    # 市场状态
+    'MarketStateAnalyzer',
+    'assess_market',
+    'get_position_advice',
+    'format_report',
 ]
